@@ -55,18 +55,18 @@
             <div>
                 <i class="fas fa-user"></i>
             </div>
-            <div>0 : 0</div>
+            <div id="resultPoints">0 : 0</div>
             <div><i class="fas fa-robot"></i></div>
         </section>
-        <h2>let's play</h2>
+        <h2 id="playHead">let's play</h2>
         <article>
-            <button value="rock" onclick="startGame()" class="iconWrap">
+            <button onclick="startGame(rock)" class="iconWrap">
                 <i class="fas fa-hand-rock"></i>
             </button>
-            <button value="paper" onclick="startGame()" class="iconWrap">
+            <button onclick="startGame(paper)" class="iconWrap">
                 <i class="fas fa-hand-paper"></i>
             </button>
-            <button value="scissors" onclick="startGame()" class="iconWrap">
+            <button onclick="startGame(scissors)" class="iconWrap">
                 <i class="fas fa-hand-scissors"></i>
             </button>
         </article>
