@@ -1,0 +1,72 @@
+/* 
+##################################
+resets / variables / mixins / general classes
+##################################
+*/
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+/*
+font-family: 'Major Mono Display', monospace;
+*/
+/* 
+Farben: 
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Major Mono Display", monospace;
+  color: rgb(113, 113, 113);
+}
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ecf0f3;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: rgb(152, 78, 22);
+  opacity: 0.5;
+  transition: 0.2s;
+  text-align: center;
+  &:hover {
+    opacity: 1;
+  }
+}
+p {
+  font-size: 1rem;
+}
+h1,
+h2,
+h3 {
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+  margin: 2vh 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.baseWrap {
+  width: 70%;
+  margin: 5vh auto;
+  border-radius: 20px;
+  padding: 1%;
+  -moz-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+}

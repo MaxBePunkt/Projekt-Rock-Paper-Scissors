@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>übungen</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/51eb081cca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <!-- ############# HEADER ############# -->
+    <!-- ######## NAV ######## -->
+    <header>
+        <section class="baseWrap">
+            <h2>how many rounds?</h2>
+            <div class="wrapDivRadios">
+                <div class="wrapper">
+                    <input value="5" class="state" checked type="radio" name="app" id="radio5">
+                    <label class="label" for="radio5">
+                        <div class="indicator"></div>
+                        <span class="text">5</span>
+                    </label>
+                </div>
+                <div class="wrapper">
+                    <input value="10" class="state" type="radio" name="app" id="radio10">
+                    <label class="label" for="radio10">
+                        <div class="indicator"></div>
+                        <span class="text">10</span>
+                    </label>
+                </div>
+                <div class="wrapper">
+                    <input value="15" class="state" type="radio" name="app" id="radio15">
+                    <label class="label" for="radio15">
+                        <div class="indicator"></div>
+                        <span class="text">15</span>
+                    </label>
+                </div>
+                <div class="wrapper">
+                    <input value="20" class="state" type="radio" name="app" id="radio20">
+                    <label class="label" for="radio20">
+                        <div class="indicator"></div>
+                        <span class="text">20</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- ############# MAIN ############# -->
+    <main>
+        <section class="baseWrap">
+            <div>
+                <i class="fas fa-user"></i>
+            </div>
+            <div>0 : 0</div>
+            <div><i class="fas fa-robot"></i></div>
+        </section>
+        <h2>let's play</h2>
+        <article>
+            <div class="iconWrap">
+                <i class="fas fa-hand-rock"></i>
+            </div>
+            <div class="iconWrap">
+                <i class="fas fa-hand-paper"></i>
+            </div>
+            <div class="iconWrap">
+                <i class="fas fa-hand-scissors"></i>
+            </div>
+        </article>
+    </main>
+    <!-- ############# FOOTER ############# -->
+    <footer>
+        <h3>make your move</h3>
+        <a href="index.html">restart</a>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
