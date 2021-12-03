@@ -157,6 +157,16 @@ main section {
   font-size: 2rem;
   justify-content: space-around;
 }
+main .loser {
+  -moz-box-shadow: inset 2px 2px 15px rgba(232, 24, 24, 0.5), 1px 1px 5px white;
+  -webkit-box-shadow: inset 2px 2px 15px rgba(232, 24, 24, 0.5), 1px 1px 5px white;
+  box-shadow: inset 2px 2px 15px rgba(232, 24, 24, 0.5), 1px 1px 5px white;
+}
+main .winner {
+  -moz-box-shadow: inset 2px 2px 15px rgba(24, 232, 72, 0.5), 1px 1px 5px white;
+  -webkit-box-shadow: inset 2px 2px 15px rgba(24, 232, 72, 0.5), 1px 1px 5px white;
+  box-shadow: inset 2px 2px 15px rgba(24, 232, 72, 0.5), 1px 1px 5px white;
+}
 main article {
   width: 40%;
   justify-content: space-around;

@@ -2,7 +2,10 @@ let button = document.getElementsByTagName("button");
 let inputs = document.getElementsByTagName("input");
 let wrapDivRadios = document.querySelector(".wrapDivRadios");
 let resultPoints = document.querySelector("#resultPoints");
+let mainSec = document.querySelector("#mainSec");
+let headerSec = document.querySelector("#headerSec");
 let playHead = document.querySelector("#playHead");
+let endHead = document.querySelector("#endHead");
 let compText = "";
 let count = 1;
 let rounds = 5;
@@ -47,38 +50,61 @@ let startGame = (userChoice) => {
       userPoints += 1;
       resultPoints.innerHTML = `${userPoints} : ${compPoints}`;
       playHead.innerHTML = `${userChoice} beats ${compText}`;
+      mainSec.classList.add("winner");
+      mainSec.classList.remove("loser");
       break;
     case "rockpaper":
       compPoints += 1;
       resultPoints.innerHTML = `${userPoints} : ${compPoints}`;
       playHead.innerHTML = `${compText} beats ${userChoice}`;
+      mainSec.classList.remove("winner");
+      mainSec.classList.add("loser");
 
       break;
     case "paperscissors":
       compPoints += 1;
       resultPoints.innerHTML = `${userPoints} : ${compPoints}`;
       playHead.innerHTML = `${compText} beats ${userChoice}`;
+      mainSec.classList.remove("winner");
+      mainSec.classList.add("loser");
+
       break;
     case "scissorspaper":
       userPoints += 1;
       resultPoints.innerHTML = `${userPoints} : ${compPoints}`;
       playHead.innerHTML = `${userChoice} beats ${compText}`;
-
+      mainSec.classList.add("winner");
+      mainSec.classList.remove("loser");
       break;
     case "scissorsrock":
       compPoints += 1;
       resultPoints.innerHTML = `${userPoints} : ${compPoints}`;
       playHead.innerHTML = `${compText} beats ${userChoice}`;
+      mainSec.classList.remove("winner");
+      mainSec.classList.add("loser");
       break;
     case "rockscissors":
       userPoints += 1;
       resultPoints.innerHTML = `${userPoints} : ${compPoints}`;
       playHead.innerHTML = `${userChoice} beats ${compText}`;
-
+      mainSec.classList.add("winner");
+      mainSec.classList.remove("loser");
       break;
     default:
       resultPoints.innerHTML = `${userPoints} : ${compPoints}`;
       playHead.innerHTML = `${userChoice} vs ${compText} : tie`;
+      mainSec.classList.remove("winner");
+      mainSec.classList.remove("loser");
+  }
+
+  if (count >= rounds) {
+    if (userPoints < compPoints) {
+      endHead.innerHTML = `Defeat`;
+    } else if (userPoints > compPoints) {
+      endHead.innerHTML = `Winner`;
+    } else if (userPoints == compPoints) {
+      endHead.innerHTML = `Tie`;
+    }
   }
   count++;
 };
