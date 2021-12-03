@@ -19,28 +19,28 @@
             <h2>how many rounds?</h2>
             <div class="wrapDivRadios">
                 <div class="wrapper">
-                    <input value="5" class="state" checked type="radio" name="app" id="radio5">
+                    <input onclick="radioChange()" value="5" class="state" checked type="radio" name="app" id="radio5">
                     <label class="label" for="radio5">
                         <div class="indicator"></div>
                         <span class="text">5</span>
                     </label>
                 </div>
                 <div class="wrapper">
-                    <input value="10" class="state" type="radio" name="app" id="radio10">
+                    <input onclick="radioChange()" value="10" class="state" type="radio" name="app" id="radio10">
                     <label class="label" for="radio10">
                         <div class="indicator"></div>
                         <span class="text">10</span>
                     </label>
                 </div>
                 <div class="wrapper">
-                    <input value="15" class="state" type="radio" name="app" id="radio15">
+                    <input onclick="radioChange()" value="15" class="state" type="radio" name="app" id="radio15">
                     <label class="label" for="radio15">
                         <div class="indicator"></div>
                         <span class="text">15</span>
                     </label>
                 </div>
                 <div class="wrapper">
-                    <input value="20" class="state" type="radio" name="app" id="radio20">
+                    <input onclick="radioChange()" value="20" class="state" type="radio" name="app" id="radio20">
                     <label class="label" for="radio20">
                         <div class="indicator"></div>
                         <span class="text">20</span>
@@ -60,15 +60,15 @@
         </section>
         <h2>let's play</h2>
         <article>
-            <div class="iconWrap">
+            <button value="rock" onclick="startGame()" class="iconWrap">
                 <i class="fas fa-hand-rock"></i>
-            </div>
-            <div class="iconWrap">
+            </button>
+            <button value="paper" onclick="startGame()" class="iconWrap">
                 <i class="fas fa-hand-paper"></i>
-            </div>
-            <div class="iconWrap">
+            </button>
+            <button value="scissors" onclick="startGame()" class="iconWrap">
                 <i class="fas fa-hand-scissors"></i>
-            </div>
+            </button>
         </article>
     </main>
     <!-- ############# FOOTER ############# -->
